@@ -1,6 +1,6 @@
 # E-commerce Product Dashboard
 
-Hosted on `[https://e-commerce-product-dashboard.vercel.app/]` please refer to this URL
+Hosted on `[https://e-commerce-product-dashboard.vercel.app/](https://e-commerce-product-dashboard.vercel.app/)` please refer to this URL
 
 ## Overview
 
