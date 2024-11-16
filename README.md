@@ -1,5 +1,7 @@
 # E-commerce Product Dashboard
 
+Hosted on `https://e-commerce-product-dashboard.vercel.app/` please refer to this URL
+
 ## Overview
 
 This is a single-page web application built using **Angular** for an **e-commerce product dashboard**. The application allows users to view a list of products, filter and sort the products, and load more products dynamically through infinite scrolling. The app also includes a responsive design to support both desktop and mobile views.
