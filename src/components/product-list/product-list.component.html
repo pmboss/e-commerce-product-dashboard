@@ -1,0 +1,19 @@
+<h1 style="text-align: center;">Product list</h1>
+
+@if(products.length){
+<app-product-filter-sort [products]="products" (filteredProducts)="setFilterproducts($event)"></app-product-filter-sort>
+
+
+<div class="product-cards">
+    @for(product of filteredProducts; track product.id) {
+    <app-product-card [product]="product"></app-product-card>
+    } @empty{
+    <div class="loading-indicator">No product available</div>
+    }
+</div>
+}
+
+
+@if(!loading){
+<button pButton pRipple (click)="loadProducts()" class="load-more-button">Load More</button>
+}

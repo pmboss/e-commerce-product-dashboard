@@ -1,0 +1,12 @@
+.filters-and-sort {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .filter-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+}

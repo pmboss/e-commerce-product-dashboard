@@ -1,0 +1,29 @@
+@defer (on viewport){
+<p-card styleClass="product-card">
+    <ng-template pTemplate="header">
+        <img alt="{{product.title}}" [src]="product.thumbnail" />
+    </ng-template>
+    <h2>{{ product.title }}</h2>
+    <p>
+        {{ product.description}}
+    </p>
+    <div class="card-action">
+        <div class="price-block">
+            <p>Price</p>
+            <p>{{product.price | currency: 'INR' }}</p>
+        </div>
+        <div class="rating-block">
+            <p>Rating</p>
+            <p>{{product.rating | floor}} ⭐</p>
+        </div>
+    </div>
+</p-card>
+} @placeholder(minimum 1000ms) {
+<!-- Placeholder content while loading -->
+<p-card styleClass="placeholder-card">
+    <ng-template pTemplate="header">
+        <div class="image-placeholder">
+        </div>
+    </ng-template>
+</p-card>
+}

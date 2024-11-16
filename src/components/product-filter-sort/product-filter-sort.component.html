@@ -1,0 +1,28 @@
+<div class="filters-and-sort">
+    <div class="filter-group">
+        <label for="filter">Filter By:</label>
+        <div class="filter">
+            <label for="category">Category: </label>
+            <p-dropdown [options]="categories" [(ngModel)]="selectedCategory" (onChange)="applyFiltersAndSorting()"
+                placeholder="Select a Categories" />
+
+        </div>
+        <div class="filter">
+            <label for="price-range">Price Range: </label>
+            <p-dropdown [options]="priceRanges" [(ngModel)]="selectedPriceRange" (onChange)="applyFiltersAndSorting()"
+                placeholder="All Prices (in rupees)" />
+
+        </div>
+        <div class="filter">
+            <label for="rating">Rating: </label>
+            <p-dropdown [options]="ratings" [(ngModel)]="selectedRating" (onChange)="applyFiltersAndSorting()"
+                placeholder="All Ratings" />
+
+        </div>
+    </div>
+    <div class="sort-group">
+        <label for="sort">Sort By: </label>
+        <p-dropdown [options]="sortOptions" [(ngModel)]="selectedSortOrder" (onChange)="applySort()"
+            placeholder="Sort by Price" />
+    </div>
+</div>
